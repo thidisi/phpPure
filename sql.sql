@@ -53,7 +53,7 @@ INSERT INTO `admins` (`id`, `username`, `password`, `email`, `phone`, `gender`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `advertise`
+-- Table structure for table `advertise` 
 --
 
 CREATE TABLE `advertise` (
