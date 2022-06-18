@@ -79,26 +79,26 @@
     <hr class="sidebar-divider">
 
     <!-- Heading -->
-    <div class="sidebar-heading">
+    <!-- <div class="sidebar-heading">
         Addons
-    </div>
+    </div> -->
 
     <!-- Nav Item - Cards -->
-    <li class="nav-item">
+    <!-- <li class="nav-item">
         <a class="nav-link" href="charts.html">
             <i class="fas fa-fw fa-cog"></i>
             <span>Cards</span></a>
-    </li>
+    </li> -->
 
     <!-- Nav Item - Charts -->
-    <li class="nav-item">
+    <!-- <li class="nav-item">
         <a class="nav-link" href="charts.html">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Charts</span></a>
-    </li>
+    </li> -->
 
     <!-- Divider -->
-    <hr class="sidebar-divider d-none d-md-block">
+    <!-- <hr class="sidebar-divider d-none d-md-block"> -->
 
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
