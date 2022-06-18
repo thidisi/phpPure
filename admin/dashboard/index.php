@@ -6,11 +6,11 @@ $month = date('Y-m');
 
 $year = date('Y-m-d');
 
-$sql="SELECT SUM(total_price) as total FROM `orders` WHERE DATE_FORMAT(created_at, '%Y-%m') = '$month' AND status = 1";
+$sql = "SELECT SUM(total_price) as total FROM `orders` WHERE DATE_FORMAT(created_at, '%Y-%m') = '$month' AND status = 1";
 $result = mysqli_query($connect, $sql);
 $eachMonth = mysqli_fetch_array($result);
 
-$sql="SELECT COUNT(*) FROM `orders` WHERE DATE_FORMAT(created_at, '%Y-%m') = '2022-05' AND status < 2";
+$sql = "SELECT COUNT(*) FROM `orders` WHERE DATE_FORMAT(created_at, '%Y-%m') = '2022-05' AND status < 2";
 $result = mysqli_query($connect, $sql);
 $totalMonth = mysqli_fetch_array($result)['COUNT(*)'];
 
@@ -53,7 +53,13 @@ $result_user = mysqli_fetch_array($result)['COUNT(*)'];
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
                                     Earnings (Monthly)</div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo currency_format($eachMonth['total']) ?></div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                    <?php if (empty($eachMonth)) {
+                                        echo '0';
+                                    } else {
+                                        echo currency_format($eachMonth['total']);
+                                    } ?>
+                                </div>
                             </div>
                             <div class="col-auto">
                                 <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -88,8 +94,8 @@ $result_user = mysqli_fetch_array($result)['COUNT(*)'];
                                 <div class="row no-gutters align-items-center">
                                     <div class="col-auto">
                                         <div class="h5 mb-0 mr-3 font-weight-bold  text-gray-800"><?php echo $totalMonth ?>
-                                        (kể cả đơn chưa được duyệt)
-                                    </div>
+                                            (kể cả đơn chưa được duyệt)
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -107,11 +113,11 @@ $result_user = mysqli_fetch_array($result)['COUNT(*)'];
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                     Số lượng nhân sự</div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800"><?php if(!empty($result_user)){ ?>
-                                        <?php echo $result_user;?>
-                                    <?php }else{?>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800"><?php if (!empty($result_user)) { ?>
+                                        <?php echo $result_user; ?>
+                                    <?php } else { ?>
                                         0
-                                    <?php }?></div>
+                                    <?php } ?></div>
                             </div>
                             <div class="col-auto">
                                 <i class="fas fa-calendar fa-2x text-gray-300"></i>
