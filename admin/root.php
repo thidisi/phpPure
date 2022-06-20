@@ -2,6 +2,7 @@
 <?php
 
 $connect = mysqli_connect('localhost', 'root', '123', 'j2school');
+mysqli_set_charset($connect, 'UTF8');
 
 if ($connect === false) {
     die("ERROR: Could not connect. " . mysqli_connect_error());

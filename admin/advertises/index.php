@@ -4,7 +4,7 @@
 
     $search = trim($_GET['search'] ?? null);
 
-    $sqlPt = "SELECT *, count(manufactures.id) as total FROM advertise
+    $sqlPt = "SELECT count(manufactures.id) as total FROM advertise
     JOIN manufactures on advertise.manufacturer_id = manufactures.id
     WHERE
     manufactures.name LIKE '%$search%'";

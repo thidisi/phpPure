@@ -54,8 +54,8 @@ $result_user = mysqli_fetch_array($result)['COUNT(*)'];
                                 <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
                                     Earnings (Monthly)</div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                    <?php if (empty($eachMonth)) {
-                                        echo '0';
+                                    <?php if (empty($eachMonth['total'])) {
+                                        echo '0đ';
                                     } else {
                                         echo currency_format($eachMonth['total']);
                                     } ?>
