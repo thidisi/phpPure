@@ -10,7 +10,7 @@ require 'admin/root.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tra cứu đơn hàng</title>
     <link rel="stylesheet" href="./public/css/rss.css" />
     <link rel="stylesheet" href="./public/css/style.css" />
     <link rel="stylesheet" href="./public/css/view_all.css" />
