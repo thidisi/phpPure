@@ -16,7 +16,7 @@ $result_sbt = mysqli_query($connect, $sql);
     <?php foreach ($result_sb as $each_sb) : ?>
         <div class="sidebar__img">
             <?php if ($each_sb['manuf_rule'] == 1) { ?>
-                <a class="brands__img" href="view_brand.php?b=<?php echo $each_sb['manuf_name'] ?>">
+                <a class="brands__img" href="view_brand.php?mb=<?php echo $each_sb['manuf_name'] ?>">
                     <img src="admin/advertises/server/uploads/<?php echo $each_sb['photo'] ?>" alt="">
                 </a>
             <?php } else { ?>
@@ -29,7 +29,7 @@ $result_sbt = mysqli_query($connect, $sql);
     <?php foreach ($result_sbt as $each_sbt) : ?>
         <div class="sidebar__img">
             <?php if ($each_sbt['manuf_rule'] == 1) { ?>
-                <a class="brands__img" href="view_brand.php?b=<?php echo $each_sbt['manuf_name'] ?>">
+                <a class="brands__img" href="view_brand.php?mb=<?php echo $each_sbt['manuf_name'] ?>">
                     <img src="admin/advertises/server/uploads/<?php echo $each_sbt['photo'] ?>" alt="">
                 </a>
             <?php } else { ?>

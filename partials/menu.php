@@ -11,7 +11,7 @@ $result_ml = mysqli_query($connect, $sql);
     <ul class="menu-list">
         <?php foreach ($result_m as $each_m) : ?>
             <li class="menu-item">
-                <a href="view_brand.php?b=<?php echo $each_m['name'] ?>"><?php echo $each_m['name'] ?></a>
+                <a href="view_brand.php?mb=<?php echo $each_m['name'] ?>"><?php echo $each_m['name'] ?></a>
             </li>
         <?php endforeach ?>
 

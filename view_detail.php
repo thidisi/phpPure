@@ -80,7 +80,14 @@ if (!empty($_GET['lap_id'])) {
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>
+    <?php if (!empty($_GET['id'])) {
+          echo $value_mb['name'];
+      }else{
+        echo $value_lp['name'];
+      }  
+    ?>
+  </title>
   <link rel="stylesheet" href="./public/css/rss.css" />
   <link rel="stylesheet" href="./public/css/style.css" />
   <link rel="stylesheet" href="./public/css/view_all.css" />
@@ -115,7 +122,7 @@ if (!empty($_GET['lap_id'])) {
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./public/js/js.js"></script>
   <script src="./public/js/slider.js"></script>
-  <script src="./public/js/live-search.js"></script>
+  <script src="./public/js/live-searchs.js"></script>
   <script>
     function Onc() {
       return confirm("Bạn phải đăng nhập vào shop mới mua được sản phẩm!")

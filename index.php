@@ -70,7 +70,7 @@ session_start();
         return alert("Thêm giỏ hàng thành công!");
       }
     </script>
-    <script src="./public/js/live-search.js"></script>
+    <script src="./public/js/live-searchs.js"></script>
    
 </body>
 </html>

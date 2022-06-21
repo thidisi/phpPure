@@ -9,7 +9,7 @@
             </div>
             <div class="header__search">
                 <form style="background-color: #fff; border-radius: 3px;" action="search.php" method="post">
-                    <input id="project" placeholder="Tìm kiếm" type="text" class="header__input" name="search">
+                    <input id="project" placeholder="Bạn tìm kiếm gì?" type="text" class="header__input" name="search">
                     <button type="submit" class="header__btn">Tìm Kiếm</button>
                 </form>
             </div>
