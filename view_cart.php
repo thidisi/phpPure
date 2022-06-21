@@ -38,7 +38,7 @@ require 'admin/root.php';
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./public/js/js.js"></script>
     <script src="./public/js/slider.js"></script>
-    <script src="./public/js/live-search.js"></script>
+    <script src="./public/js/live-searchs.js"></script>
 
     <script>
         $(document).ready(function() {

@@ -1,9 +1,9 @@
-<?php
-session_start();
-if(empty($_SESSION['id'])){
-    $_SESSION['error'] = 'Đăng nhập đi bạn!';
-    header('location:login.php');
-}
+<!--/* <?php
+// session_start();
+// if(empty($_SESSION['id'])){
+//     $_SESSION['error'] = 'Đăng nhập đi bạn!';
+//     header('location:login.php');
+// }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,11 +22,11 @@ if(empty($_SESSION['id'])){
 <body>
     Day la trang nguoi dung. Xin chao ban 
     <?php
-        echo $_SESSION['name'];
+       // echo $_SESSION['name'];
     ?>
     <br>
     <a href="logout.php">
         Dang xuat
     </a>
 </body>
-</html>
+</html> -->

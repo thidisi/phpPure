@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $("#project").autocomplete({
-        minLength: 4,
+        minLength: 2,
         source: 'get_search.php',
         focus: function(event, ui) {
             $("#project").val(ui.item.label);
