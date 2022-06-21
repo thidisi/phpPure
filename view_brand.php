@@ -3,7 +3,7 @@
 session_start();
 require 'admin/root.php';
 
-$brand = isset($_GET['b']) ? $_GET['b'] : '';
+$brand = isset($_GET['mb']) ? $_GET['mb'] : '';
 
 $brands = isset($_GET['lp']) ? $_GET['lp'] : '';
 
@@ -13,7 +13,7 @@ if (!(mysqli_num_rows($result) === 1)) {
     header('location:404.php');
 }
 
-if (!empty($_GET['b'])) {
+if (!empty($_GET['mb'])) {
     $sql = "SELECT `products`.*, manufactures.name 
     FROM products Join manufactures on manufactures.id = products.manufacturer_id 
     Where manufactures.name = '$brand'";
@@ -41,7 +41,15 @@ if (!empty($_GET['lp'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>
+        <?php
+            if (!empty($_GET['mb'])) {
+                echo $value_mb['name'] . " | Điện thoại";
+            }else { 
+                echo $value_lp['name'] . " | Laptop xách tay";
+            }
+        ?>
+    </title>
     <link rel="stylesheet" href="./public/css/rss.css" />
     <link rel="stylesheet" href="./public/css/style.css" />
     <link rel="stylesheet" href="./public/css/view_all.css" />
@@ -58,7 +66,7 @@ if (!empty($_GET['lp'])) {
     <div class="wrapper">
         <?php include './partials/sticky.php' ?>
         <?php
-        if (!empty($_GET['b'])) {
+        if (!empty($_GET['mb'])) {
             include './detail/detail_brand.php';
         }
         ?>

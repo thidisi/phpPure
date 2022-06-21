@@ -1,6 +1,6 @@
 <?php
 require 'admin/root.php';
-$brand = isset($_GET['b']) ? $_GET['b'] : '';
+$brand = isset($_GET['mb']) ? $_GET['mb'] : '';
 
 $sqlPt = "SELECT 
     count(*)
