@@ -10,7 +10,7 @@ $sql = "SELECT SUM(total_price) as total FROM `orders` WHERE DATE_FORMAT(created
 $result = mysqli_query($connect, $sql);
 $eachMonth = mysqli_fetch_array($result);
 
-$sql = "SELECT COUNT(*) FROM `orders` WHERE DATE_FORMAT(created_at, '%Y-%m') = '2022-05' AND status < 2";
+$sql = "SELECT COUNT(*) FROM `orders` WHERE DATE_FORMAT(created_at, '%Y-%m') = '$month' AND status < 2";
 $result = mysqli_query($connect, $sql);
 $totalMonth = mysqli_fetch_array($result)['COUNT(*)'];
 
