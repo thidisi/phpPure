@@ -76,7 +76,7 @@ $result = mysqli_query($connect, $sql);
                             </div>
                         <?php endforeach ?>
                     </div>
-                    <?php include './partials/pagination.php' ?>
+                    <?php include './partials/pagination_mb.php' ?>
                 </div>
                 <div class="grid">
                     <div class="brands__heading">

@@ -11,7 +11,7 @@ $row = mysqli_fetch_assoc($arrayNum);
 $total_records = $row['count(*)'];
 
 $current_page = isset($_GET['page']) ? $_GET['page'] : 1;
-$limit = 2;
+$limit = 6;
 
 $total_page = ceil($total_records / $limit);
 

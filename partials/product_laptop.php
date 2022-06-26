@@ -8,7 +8,7 @@ $row = mysqli_fetch_assoc($arrayNum);
 $total_records = $row['total'];
 
 $current_page = isset($_GET['pages']) ? $_GET['pages'] : 1;
-$limit = 3;
+$limit = 6;
 
 $total_page = ceil($total_records / $limit);
 
@@ -75,7 +75,7 @@ $result = mysqli_query($connect, $sql);
                 <ul class="pagination">
                     <?php if ($current_page > 1 && $total_page > 1) { ?>
                         <li class="page-item">
-                            <a class="page-link" href="index.php?page_lp=<?php echo ($current_page - 1) ?>">Prev</a>
+                            <a class="page-link" href="index.php?pages=<?php echo ($current_page - 1) ?>">Prev</a>
                         </li>
                     <?php } ?>
                     <?php for ($i = 1; $i <= $total_page; $i++) { ?>

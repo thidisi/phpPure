@@ -12,7 +12,7 @@ $row = mysqli_fetch_assoc($arrayNum);
 $total_records = $row['count(*)'];
 
 $current_page = isset($_GET['page']) ? $_GET['page'] : 1;
-$limit = 2;
+$limit = 6;
 
 $total_page = ceil($total_records / $limit);
 
@@ -89,7 +89,7 @@ $result = mysqli_query($connect, $sql);
                                 <ul class="pagination">
                                     <?php if ($current_page > 1 && $total_page > 1) { ?>
                                         <li class="page-item">
-                                            <a class="page-link" href="view_brand.php?b=<?php echo $brand ?>&page=<?php echo ($current_page - 1) ?>">Prev</a>
+                                            <a class="page-link" href="view_brand.php?mb=<?php echo $brand ?>&page=<?php echo ($current_page - 1) ?>">Prev</a>
                                         </li>
                                     <?php } ?>
                                     <?php for ($i = 1; $i <= $total_page; $i++) { ?>
@@ -97,13 +97,13 @@ $result = mysqli_query($connect, $sql);
                                             <?php if ($i == $current_page) { ?>
                                                 <span class="page-link text-muted"><?php echo  $i ?></span>
                                             <?php } else { ?>
-                                                <a class="page-link" href="view_brand.php?b=<?php echo $brand ?>&page=<?php echo  $i ?>"><?php echo  $i ?></a>
+                                                <a class="page-link" href="view_brand.php?mb=<?php echo $brand ?>&page=<?php echo  $i ?>"><?php echo  $i ?></a>
                                             <?php } ?>
                                         </li>
                                     <?php } ?>
                                     <?php if ($current_page < $total_page && $total_page > 1) { ?>
                                         <li class="page-item">
-                                            <a class="page-link" href="view_brand.php?b=<?php echo $brand ?>&page=<?php echo ($current_page + 1) ?>">Next</a>
+                                            <a class="page-link" href="view_brand.php?mb=<?php echo $brand ?>&page=<?php echo ($current_page + 1) ?>">Next</a>
                                         </li>
                                     <?php } ?>
                                 </ul>

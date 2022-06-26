@@ -55,7 +55,7 @@
     </li>
 
     <li class="nav-item active">
-        <a class="nav-link" href="../advertises/index.php">
+        <a class="nav-link" href="../categoris/index.php">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Advertises</span></a>
     </li>

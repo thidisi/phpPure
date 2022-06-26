@@ -1,7 +1,7 @@
 
 <?php
 
-$connect = mysqli_connect('localhost', 'root', '123', 'j2school');
+$connect = mysqli_connect('remotemysql.com', '7IT4gSRBBa', '36oT3lmXBN', '7IT4gSRBBa');
 mysqli_set_charset($connect, 'UTF8');
 
 if ($connect === false) {

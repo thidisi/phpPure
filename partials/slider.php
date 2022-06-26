@@ -8,11 +8,11 @@ $result_av = mysqli_query($connect, $sql);
             <div class="brands-img__wrap">
                 <?php if ($each_av['rules_lp'] == 1) { ?>
                     <a href="view_brand.php?mb=<?php echo $each_av['manuf_name'] ?>" class="brands__img">
-                        <img src="admin/advertises/server/uploads/<?php echo $each_av['photo'] ?>" alt="">
+                        <img src="admin/categoris/server/uploads/<?php echo $each_av['photo'] ?>" alt="">
                     </a>
                 <?php } else { ?>
                     <a href="view_brand.php?lp=<?php echo $each_av['manuf_name'] ?>" class="brands__img">
-                        <img src="admin/advertises/server/uploads/<?php echo $each_av['photo'] ?>" alt="">
+                        <img src="admin/categoris/server/uploads/<?php echo $each_av['photo'] ?>" alt="">
                     </a>
                 <?php } ?>
             </div>

@@ -17,11 +17,11 @@ $result_sbt = mysqli_query($connect, $sql);
         <div class="sidebar__img">
             <?php if ($each_sb['manuf_rule'] == 1) { ?>
                 <a class="brands__img" href="view_brand.php?mb=<?php echo $each_sb['manuf_name'] ?>">
-                    <img src="admin/advertises/server/uploads/<?php echo $each_sb['photo'] ?>" alt="">
+                    <img src="admin/categoris/server/uploads/<?php echo $each_sb['photo'] ?>" alt="">
                 </a>
             <?php } else { ?>
                 <a class="brands__img" href="view_brand.php?lp=<?php echo $each_sb['manuf_name'] ?>">
-                    <img src="admin/advertises/server/uploads/<?php echo $each_sb['photo'] ?>" alt="">
+                    <img src="admin/categoris/server/uploads/<?php echo $each_sb['photo'] ?>" alt="">
                 </a>
             <?php } ?>
         </div>
@@ -30,11 +30,11 @@ $result_sbt = mysqli_query($connect, $sql);
         <div class="sidebar__img">
             <?php if ($each_sbt['manuf_rule'] == 1) { ?>
                 <a class="brands__img" href="view_brand.php?mb=<?php echo $each_sbt['manuf_name'] ?>">
-                    <img src="admin/advertises/server/uploads/<?php echo $each_sbt['photo'] ?>" alt="">
+                    <img src="admin/categoris/server/uploads/<?php echo $each_sbt['photo'] ?>" alt="">
                 </a>
             <?php } else { ?>
                 <a class="brands__img" href="view_brand.php?lp=<?php echo $each_sbt['manuf_name'] ?>">
-                    <img src="admin/advertises/server/uploads/<?php echo $each_sbt['photo'] ?>" alt="">
+                    <img src="admin/categoris/server/uploads/<?php echo $each_sbt['photo'] ?>" alt="">
                 </a>
             <?php } ?>
         </div>
